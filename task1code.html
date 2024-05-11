@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\asus\Desktop\Task1css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        <h3>How do you feel?</h3>
+        <div id="moodButtons">
+            <button class="moodButton" onclick="logMood('😄')">😄</button>
+            <button class="moodButton" onclick="logMood('😐')">😐</button>
+            <button class="moodButton" onclick="logMood('😔')">😔</button>
+        </div>
+        <div id="selectedMood"></div>
+        <button id="viewTrendsBtn" onclick="viewTrends()">View Mood Trends</button>
+        <button id="dailyCheckInBtn" onclick="promptDailyCheckIn()">Daily Mood Check-In</button>
+        <div id="recommendation"></div>
+        <div class="container">
+            <h1>Gratitude Bingo</h1>
+            <div id="bingo-board" class="bingo-board">
+                <div class="square" onclick="displayInput('1')">Something you're thankful for in your home</div>
+                <div class="square" onclick="displayInput('2')">A skill or talent you're grateful for</div>
+                <div class="square" onclick="displayInput('3')">A friend you appreciate</div>
+                <div class="square" onclick="displayInput('4')">A book or movie that inspires you</div>
+                <div class="square" onclick="displayInput('5')">A place you love to visit</div>
+                <div class="square" onclick="displayInput('6')">A favorite food or drink</div>
+                <div class="square" onclick="displayInput('7')">An experience that made you smile</div>
+                <div class="square" onclick="displayInput('8')">A kind gesture you received</div>
+                <div class="square" onclick="displayInput('9')">Something beautiful in nature</div>
+                <div class="square" onclick="displayInput('10')">A positive change or growth</div>
+                <div class="square" onclick="displayInput('11')">A moment of laughter</div>
+                <div class="square" onclick="displayInput('12')">A happy memory from the past</div>
+                <div class="square" onclick="displayInput('13')">A lesson learned from a challenge</div>
+                <div class="square" onclick="displayInput('14')">A helpful tool or technology</div>
+                <div class="square" onclick="displayInput('15')">A cozy or comforting item</div>
+            </div>
+            <input type="text" id="incident-input" placeholder="Type your incident here..." style="display: none;">
+            <button id="save-btn" onclick="saveIncident()" style="display: none;">Save</button>
+            <div id="saved-incidents" style="display: none;"></div>
+        </div>
+        <div class="container">
+            <h1>Express your feelings with AI</h1>
+            <div id="chatbox"></div>
+            <input type="text" id="inputField" placeholder="Type your message here..." style="display: none;">
+            <button id="toggleChatBtn" onclick="toggleChat()">Chat with AI</button>
+        </div>
+    <script src="C:\Users\asus\Desktop\Task1js.js"></script>
+</body>
+</html>

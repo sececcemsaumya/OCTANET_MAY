@@ -1,0 +1,249 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:#97d4f1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#moodButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.moodButton {
+  font-size: 24px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#selectedMood {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#viewTrendsBtn,
+#dailyCheckInBtn {
+  display: block;
+  margin: 20px auto;
+}
+
+#recommendation {
+  margin-top: 20px;
+}
+
+#chatbox {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#inputField {
+  width: calc(100% - 22px);
+  margin-top: 10px;
+  padding: 5px;
+  display: block;
+}
+
+#toggleChatBtn {
+  display: block;
+  margin: 20px auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+.bot-message {
+  background-color: #e0f7fa;
+  text-align: right;
+}
+
+/* Font Awesome icons */
+.user-icon::before {
+  content: '\f007'; /* User icon */
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 5px;
+}
+
+.bot-icon::before {
+  content: '\f121'; /* Robot icon */
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 5px;
+}
+
+#viewTrendsBtn{
+ padding: 8px;
+ border-radius: 99px; 
+ border:none;
+ background-color: pink;
+ cursor: pointer;
+ padding-left: 10px;
+ padding-right: 10px;
+ 
+}
+
+#viewTrendsBtn:hover {
+  background-color: violet; /* Darker blue on hover */
+}
+
+#dailyCheckInBtn{
+ padding: 8px;
+ border-radius: 99px; 
+ border:none;
+ background-color: pink;
+ cursor: pointer;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+#dailyCheckInBtn:hover{
+  background-color: violet;
+}
+
+#toggleChatBtn{
+ padding: 8px;
+ border-radius: 99px; 
+ border:none;
+ background-color: pink;
+ cursor: pointer;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+#toggleChatBtn:hover{
+  background-color: violet;
+}
+
+
+.bingo-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.square {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.square.completed {
+  background-color: lightgreen;
+}
+
+#generateBoardBtn{
+  padding: 8px;
+ border-radius: 99px; 
+ border:none;
+ background-color: pink;
+ cursor: pointer;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+#generateBoardBtn:hover{
+  background-color: violet;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.bingo-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.square {
+  padding: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  
+}
+
+
+
+#incident-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#save-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#saved-incidents {
+  margin-top: 20px;
+}
+
+.square:hover {
+  background-color: #d9d9d9;
+}
+
+#save-btn:hover {
+  background-color: #0056b3;
+}
+
+.square, #save-btn {
+  transition: background-color 0.3s ease;
+}
+
+.square {
+  border-radius: 5px;
+}
+
+#save-btn {
+  border-radius: 5px;
+}
+
+.container {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.bingo-board {
+  margin-bottom: 20px;
+}
+
+#saved-incidents {
+  margin-top: 20px;
+}
+
+
